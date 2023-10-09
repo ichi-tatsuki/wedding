@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframeのsrcにGETパラメータを設定</title>
+    <style>
+        /* iframeを画面いっぱいに表示するスタイル */
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="myIframe"></iframe>
+
+    <script>
+        // URLからGETパラメータを取得する関数
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // URLからnameパラメータを取得
+        var nameParam = getParameterByName('name');
+
+        // iframeのsrcにnameパラメータを設定
+        var iframe = document.getElementById('myIframe');
+        if (nameParam) {
+            var iframeSrc = 'https://script.google.com/macros/s/AKfycbxIs8oVcU1Qyb6AyEu5qRoQ4eeroQ4zNT-gxlO9CPR7rTKNXlMMUG9f0UqMSvKcDDH8/exec?name=' + encodeURIComponent(nameParam);
+            iframe.src = iframeSrc;
+        } else {
+            // nameパラメータが存在しない場合のデフォルトURL
+            iframe.src = 'https://script.google.com/macros/s/AKfycbxIs8oVcU1Qyb6AyEu5qRoQ4eeroQ4zNT-gxlO9CPR7rTKNXlMMUG9f0UqMSvKcDDH8/exec';
+        }
+    </script>
+</body>
+</html>
