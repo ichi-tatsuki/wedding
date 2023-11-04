@@ -1,0 +1,160 @@
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eee9e6;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .top-page {
+    background-image: url('https://drive.google.com/uc?id=1eonxUWg3Bk3EaunGqelRpSKVOEUv3mbJ');
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+
+  .menu-button {
+    background: none;
+    border: none;
+    color: #333;
+    /* ダークグレーのアイコン */
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+
+  nav {
+    background-color: #fff;
+    /* 白色の背景 */
+    color: #333;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 2;
+  }
+
+  nav.open {
+    left: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
+  nav ul li a {
+    color: #333;
+    /* ダークグレーのリンク */
+    text-decoration: none;
+  }
+
+  nav ul li:hover {
+    background-color: #eee;
+    /* より明るいグレーのホバー効果 */
+  }
+
+  nav ul li a span {
+    display: block;
+    padding: 10px; /* 必要に応じて適切な余白を設定 */
+    text-decoration: none;
+    color: #000; /* テキストの色を設定 */
+  }
+
+  main {
+    margin-left: 0;
+    /* モバイルデバイスではサイドバーは表示しないため、メインコンテンツのマージンを0に設定 */
+    padding: 20px;
+  }
+
+  h1 {
+    color: #333;
+    font-family: cursive;
+    /* おしゃれなフォントを指定 */
+    font-size: 36px;
+    /* フォントサイズを調整 */
+  }
+
+  .quiz-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .option-button {
+    background-color: #f0f0f0;
+    /* ボタンの背景色を設定 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .option-button:hover {
+    background-color: #e0e0e0;
+    /* ホバー時の背景色を設定 */
+  }
+
+  #submit-button {
+    background-color: #007bff;
+    /* 回答ボタンの背景色を設定 */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #submit-button:hover {
+    background-color: #0056b3;
+    /* ホバー時の背景色を設定 */
+  }
+
+  .profile-container {
+      display: flex;
+      justify-content: space-between; /* 列を均等に配置 */
+      align-items: center;
+  }
+
+  .profile-column {
+      flex: 1;
+      padding: 0px;
+      margin: 5px;
+      text-align: center; /* テキストを中央揃え */
+  }
+
+  .profile-column-q {
+      flex: 1;
+      padding: 0px;
+      margin: 5px;
+      text-align: center; /* テキストを中央揃え */
+  }
+  
+  .profile-column-q p {
+      color: #c4972f;
+  }

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body id="body">
+  <script> 
+    const user = "<?=name ?>";
+    const seatUrl = "<?=seatUrl ?>";
+  </script>
+  
+  <button id="menuButton" class="menu-button"><i class="fas fa-bars"></i></button>
+  <div class="overlay" id="overlay"></div>
+  <nav id="sidebar">
+    <ul>
+      <li><a href="#" onclick="loadTopPage()"><span>ホーム</span></a></li>
+      <li><a href="#" onclick="loadSeatPage()"><span>席次</span></a></li>
+      <li><a href="#" onclick="loadMenuPage()"><span>メニュー</span></a></li>
+      <li><a href="#" onclick="loadProfilePage()"><span>プロフィール</span></a></li>
+      <li><a href="#" onclick="loadQuizPage()"><span>Quiz</span></a></li>
+    </ul>
+  </nav>
+  <div class="top-page">
+    <h1><?=name ?>-San<br>Welcome to <br> Tatsuki & Sakiko's<br>Wedding Party</h1>
+  </div>
+  <div class="subpage">
+  <h2><?=name ?>さんの席次は次の場所です。</h2>
+  <img src="${seatUrl}" width=100%>
+</div>
+<div class="subpage">
+    <h2>MENU</h2>
+    <img src="https://drive.google.com/uc?id=1BmUs5sonO4bRFkyrMXI5YZiQKjOj3g5c" width=100%>
+    <h2>DRINK MENU</h2>
+    <p>SPARKLING WINE<br>
+      <span style="font-size : 10px">-フランス産 ベルモン・ブラン・ド・ブラン・ブリュット-</span>
+    </p>
+    <p>WHITE WINE<br>
+      <span style="font-size : 10px">-イタリア産 ボルゴ・サンレオ・ビアンコ--</span>
+    </p>
+    <p>RED WINE<br>
+      <span style="font-size : 10px">-スペイン産 アロマ・エスパニョール・テンプラニーリョ-</span>
+    </p>
+    <p>BEER</p>
+    <p>WHISKY<br>
+      <span style="font-size : 10px">-ネヴィス・デュー-</span>
+    </p>
+    <p>SOFT DRINK<br>
+      <span style="font-size : 10px">-オレンジジュース  烏龍茶-</span>
+    </p>
+    <p>SPARKLING WATER<br>
+      <span style="font-size : 10px">-ペリエ-</span>
+    </p>
+  </div>
+  <div class="profile-container">
+    <div class="profile-column">
+      <img src="https://drive.google.com/uc?id=1lT3eqossuwzjPbpvTQ4TonSOTF7wV4lh" width=100%>
+      <p>たつき</p>
+    </div>
+    <div class="profile-column">
+      <img src="https://drive.google.com/uc?id=1lT3eqossuwzjPbpvTQ4TonSOTF7wV4lh" width=100%>
+      <p>さきこ</p>
+    </div>
+  </div>
+  <div class="profile-container">
+    <div class="profile-column">
+      <p>1995. 8. 24</p>
+    </div>
+    <div class="profile-column-q">
+      <p>生年月日</p>
+    </div>
+    <div class="profile-column">
+      <p>1995. 10. 22</p>
+    </div>
+  </div>
+  <div class="profile-container">
+    <div class="profile-column">
+      <p>山口県</p>
+    </div>
+    <div class="profile-column-q">
+      <p>出身地</p>
+    </div>
+    <div class="profile-column">
+      <p>東京都</p>
+    </div>
+  </div>
+  <div class="profile-container">
+    <div class="profile-column">
+      <p>優しくって少しバカ</p>
+    </div>
+    <div class="profile-column-q">
+      <p>嵐の好きな曲</p>
+    </div>
+    <div class="profile-column">
+      <p>season</p>
+    </div>
+  </div>
+  <div class="profile-container">
+    <div class="profile-column">
+      <p>テレビ鑑賞/作業に没頭している時間</p>
+    </div>
+    <div class="profile-column-q">
+      <p>趣味・幸せを感じる時間</p>
+    </div>
+    <div class="profile-column">
+      <p>カメラ、旅行/睡眠</p>
+    </div>
+  </div>
+  <div class="profile-container">
+    <div class="profile-column">
+      <p>行動が早く実行力があるところ</p>
+    </div>
+    <div class="profile-column-q">
+      <p>相手の好きなところ</p>
+    </div>
+    <div class="profile-column">
+      <p>思慮深いところ</p>
+    </div>
+  </div>
+  <div class="profile-container">
+    <div class="profile-column">
+      <p>赤色</p>
+    </div>
+    <div class="profile-column-q">
+      <p>好きな色</p>
+    </div>
+    <div class="profile-column">
+      <p>茶色</p>
+    </div>
+  </div>
+  <div class="profile-container">
+    <div class="profile-column">
+      <p>進撃の巨人<br>四月は君の嘘</p>
+    </div>
+    <div class="profile-column-q">
+      <p>好きな作品</p>
+    </div>
+    <div class="profile-column">
+      <p>くまのがっこう</p>
+    </div>
+  </div>
+  <div class="subpage">
+    <div class="quiz-container">
+      <div class="options">
+        <button class="option-button" data-value="option1" onclick="writeToSpreadsheet('select1')">選択肢1</button>
+        <button class="option-button" data-value="option2" onclick="writeToSpreadsheet('select2')">選択肢2</button>
+        <button class="option-button" data-value="option3" onclick="writeToSpreadsheet('select3')">選択肢3</button>
+        <button class="option-button" data-value="option4" onclick="writeToSpreadsheet('select4')">選択肢4</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>  
+</body>
+
+</html>
