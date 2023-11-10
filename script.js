@@ -2,9 +2,32 @@ const menuButton = document.getElementById('menuButton');
 const sidebar = document.getElementById('sidebar');
 const overlay = document.getElementById('overlay');
 const content = document.getElementById('content');
+const userf = document.getElementById('user');
+const seat = document.getElementById('seatimg');
+const user = window.location.href.split("/").pop().replace(/\.html.*/, "");
+const url = "https://script.google.com/macros/s/AKfycbziaNMSmmpQI00wLbfOklS0-d_zzuth5Rt8biB0DZkR2VwoNtD4EJD7UMz5l5hG7h0/exec";
+
+userf.textContent=user;
 
 function writeToSpreadsheet(answer) {
-    google.script.run.writeToSpreadsheet(user, answer);
+    var data = {
+        user: user,
+        answer: answer
+    };
+
+    var options = {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify(data) // 送信データをJSON文字列に変換
+    };
+
+    fetch(url, options)
+            .then(response => response.json()) // 応答をJSON形式に解析
+            .then(data => console.log(data)) // 応答データをコンソールに表示
+            .catch(error => console.error('Error:', error)); // エラーハンドリング
 }
 function openSidebar() {
     sidebar.style.left = '0';
