@@ -6,10 +6,46 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .top-page {
-    background-image: url('SCN1691909291660.jpg');
+  header {
+    /* background-image: url('select8.jpg'); */
+    background-image: url('header.jpg');
     background-size: cover;
-    aspect-ratio: 3 / 4;
+    filter: brightness(0.7);
+    aspect-ratio: 3 / 1;
+  }
+  p {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1em;
+    text-align: center; /* テキストを中央に配置 */
+  }
+  #head-msg {
+    margin-top: 0;
+  }
+  .top-page {
+    position: relative;
+    background-image: url('select45.JPG');
+    background-size: cover;
+    aspect-ratio: 3 / 5;
+  }
+
+  .imgfilter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* 背景色と透明度を調整 */
+  }
+  .top-msg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%; /* 幅を100%に設定 */
+      font-family: 'Noto Serif JP', serif;
+      font-size: 2.5em;
+      color: #ffffff; /* テキストの色を純白に設定 */
+      text-align: center; /* テキストを中央に配置 */
   }
   .overlay {
     display: none;
@@ -20,6 +56,11 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 1;
+  }
+
+  .subpage {
+    margin-top: 50px;
+    margin-bottom: 50px
   }
 
   .menu-button {
@@ -94,34 +135,58 @@
     /* フォントサイズを調整 */
   }
 
+  .sub-title h2 {
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 0;
+    color: #c4972f;
+  }
+  .sub-title p {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2em;
+    color: #c4972f;
+    margin-top: 0;
+    text-align: center; /* テキストを中央に配置 */
+  }
+  .menu-list p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height : 1;
+    font-size: 1.5em;
+
+  }
+  .menu-list p span{
+    font-size: 0.6em;
+    color:#777;
+  }
   .quiz-container {
     text-align: center;
-    padding: 20px;
-  }
-
-  .options {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /* 横幅が足りない場合に折り返す */
     gap: 10px;
-    margin-top: 20px;
-  }
+}
+.option-button {
+  background-color: #f0f0f0;
+  /* ボタンの背景色を設定 */
+  border: none;
+  border-radius: 5px;
+  padding: 2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 3em;
+  width: 49%; /* 横幅を50%に設定 */
+  box-sizing: border-box; /* ボーダーとパディングを含めて横幅計算 */
+}
 
-  .option-button {
-    background-color: #f0f0f0;
-    /* ボタンの背景色を設定 */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .option-button:hover {
+.option-button:hover {
     background-color: #e0e0e0;
     /* ホバー時の背景色を設定 */
-  }
+}
 
-  #submit-button {
+#submit-button {
     background-color: #007bff;
     /* 回答ボタンの背景色を設定 */
     color: #fff;
@@ -130,12 +195,12 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
 
-  #submit-button:hover {
+#submit-button:hover {
     background-color: #0056b3;
     /* ホバー時の背景色を設定 */
-  }
+}
 
   .profile-container {
       display: flex;
@@ -144,6 +209,8 @@
   }
 
   .profile-column {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2em;
       flex: 1;
       padding: 0px;
       margin: 5px;
@@ -151,6 +218,8 @@
   }
 
   .profile-column-q {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2em;
       flex: 1;
       padding: 0px;
       margin: 5px;
