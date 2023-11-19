@@ -2,6 +2,7 @@
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 100%;
     background-color: #eee9e6;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,9 +18,6 @@
     font-family: 'Noto Serif JP', serif;
     font-size: 1em;
     text-align: center; /* テキストを中央に配置 */
-  }
-  #head-msg {
-    margin-top: 0;
   }
   .top-page {
     position: relative;
@@ -121,17 +119,11 @@
     color: #000; /* テキストの色を設定 */
   }
 
-  main {
-    margin-left: 0;
-    /* モバイルデバイスではサイドバーは表示しないため、メインコンテンツのマージンを0に設定 */
-    padding: 20px;
-  }
-
   h1 {
-    color: #333;
-    font-family: cursive;
+    color: #000;
+    font-family: 'Great Vibes', cursive;
     /* おしゃれなフォントを指定 */
-    font-size: 36px;
+    font-size: 3em;
     /* フォントサイズを調整 */
   }
 
@@ -139,13 +131,13 @@
     /* font-family: 'Pacifico', cursive; */
     font-family: 'Great Vibes', cursive;
     text-align: center;
-    font-size: 5em;
+    font-size: 6em;
     margin-bottom: 0;
     color: #c4972f;
   }
   .sub-title p {
     font-family: 'Noto Serif JP', serif;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #c4972f;
     margin-top: 0;
     text-align: center; /* テキストを中央に配置 */
@@ -154,11 +146,11 @@
     margin-top: 40px;
     margin-bottom: 40px;
     line-height : 1;
-    font-size: 1.5em;
+    font-size: 2.5em;
 
   }
   .menu-list p span{
-    font-size: 0.6em;
+    font-size: 0.5em;
     color:#777;
   }
   .quiz-container {
