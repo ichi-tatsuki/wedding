@@ -8,7 +8,7 @@
 
   header {
     /* background-image: url('select8.jpg'); */
-    background-image: url('header.jpg');
+    background-image: url('res/header.jpg');
     background-size: cover;
     aspect-ratio: 3 / 1;
   }
@@ -20,7 +20,7 @@
 
   .top-page {
     position: relative;
-    background-image: url('select45.JPG');
+    background-image: url('res/select45.JPG');
     background-size: cover;
     aspect-ratio: 3 / 5;
   }
@@ -64,6 +64,7 @@
     font-size: 6em;
     color: #c4972f;
     line-height: 0.7;
+    margin-bottom: 0;
   }
 
   h2 span {
@@ -145,4 +146,46 @@
 
   .profile-column-q p {
     color: #c4972f;
+  }
+
+  .seat-spot {
+    position: relative;
+  }
+
+  .circle {
+    position: absolute;
+    width: 2vw; /* 直径 */
+    height: 2vw; /* 直径 */
+    top: -20%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; /* 角丸 */
+    border: 5px solid #f00; /* 線の太さと色 */
+    box-sizing: border-box; /* ボーダーボックスのサイズ指定 */
+    animation: ripple 1s linear infinite; /* 2秒かけて波紋が広がり続けるアニメーション */
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: translate(-50%, -50%) scale(0); /* 初期状態：通常サイズ */
+      border-width: 0; /* 初期状態：線の太さを0にして非表示 */
+    }
+    20% {
+      border-width: 5px; /* 25%まで：線の太さを増やす */
+    }
+    40% {
+      transform: translate(-50%, -50%) scale(1.25); /* 50%まで：2倍のサイズまで広がる */
+      border-width: 5px; /* 50%まで：線の太さを一定に保つ */
+    }
+    60% {
+      border-width: 0; /* 75%まで：線の太さを0にして非表示 */
+    }
+    80% {
+      transform: translate(-50%, -50%) scale(2.5); /* 最終状態：通常サイズに戻る */
+      border-width: 0; /* 最終状態：線の太さを0にして非表示 */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(2.5); /* 最終状態：通常サイズに戻る */
+      border-width: 0; /* 最終状態：線の太さを0にして非表示 */
+    }
   }
