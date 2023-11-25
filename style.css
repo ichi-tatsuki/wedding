@@ -173,18 +173,18 @@
       border-width: 5px; /* 25%まで：線の太さを増やす */
     }
     40% {
-      transform: translate(-50%, -50%) scale(1.25); /* 50%まで：2倍のサイズまで広がる */
+      transform: translate(-50%, -50%) scale(1.5); /* 50%まで：2倍のサイズまで広がる */
       border-width: 5px; /* 50%まで：線の太さを一定に保つ */
     }
     60% {
       border-width: 0; /* 75%まで：線の太さを0にして非表示 */
     }
     80% {
-      transform: translate(-50%, -50%) scale(2.5); /* 最終状態：通常サイズに戻る */
+      transform: translate(-50%, -50%) scale(3); /* 最終状態：通常サイズに戻る */
       border-width: 0; /* 最終状態：線の太さを0にして非表示 */
     }
     100% {
-      transform: translate(-50%, -50%) scale(2.5); /* 最終状態：通常サイズに戻る */
+      transform: translate(-50%, -50%) scale(3); /* 最終状態：通常サイズに戻る */
       border-width: 0; /* 最終状態：線の太さを0にして非表示 */
     }
   }
