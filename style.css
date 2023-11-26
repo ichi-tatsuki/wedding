@@ -43,12 +43,6 @@
     width: 100%;
     color: #ffffff;
   }
-
-  .subpage {
-    margin-top: 5em;
-    margin-bottom: 5em;
-  }
-
   h1 {
     position: absolute;
     color: #000000;
@@ -64,6 +58,8 @@
     font-size: 6em;
     color: #c4972f;
     line-height: 0.7;
+    margin-top: 1em;
+    margin-bottom: 0;
   }
 
   h2 span {
@@ -158,33 +154,33 @@
     top: -20%;
     left: -20%;
     transform: translate(-50%, -50%);
-    border-radius: 50%; /* 角丸 */
-    border: 5px solid #f00; /* 線の太さと色 */
-    box-sizing: border-box; /* ボーダーボックスのサイズ指定 */
-    animation: ripple 1s linear infinite; /* 2秒かけて波紋が広がり続けるアニメーション */
+    border-radius: 50%;
+    border: 5px solid #c42f2f;
+    box-sizing: border-box;
+    animation: ripple 1s linear infinite;
   }
   
   @keyframes ripple {
     0% {
-      transform: translate(-50%, -50%) scale(0); /* 初期状態：通常サイズ */
-      border-width: 0; /* 初期状態：線の太さを0にして非表示 */
+      transform: translate(-50%, -50%) scale(0);
+      border-width: 0;
     }
     20% {
-      border-width: 5px; /* 25%まで：線の太さを増やす */
+      border-width: 5px;
     }
     40% {
-      transform: translate(-50%, -50%) scale(1.5); /* 50%まで：2倍のサイズまで広がる */
-      border-width: 5px; /* 50%まで：線の太さを一定に保つ */
+      transform: translate(-50%, -50%) scale(1.5);
+      border-width: 5px;
     }
     60% {
-      border-width: 0; /* 75%まで：線の太さを0にして非表示 */
+      border-width: 0;
     }
     80% {
-      transform: translate(-50%, -50%) scale(3); /* 最終状態：通常サイズに戻る */
-      border-width: 0; /* 最終状態：線の太さを0にして非表示 */
+      transform: translate(-50%, -50%) scale(3);
+      border-width: 0;
     }
     100% {
-      transform: translate(-50%, -50%) scale(3); /* 最終状態：通常サイズに戻る */
-      border-width: 0; /* 最終状態：線の太さを0にして非表示 */
+      transform: translate(-50%, -50%) scale(3);
+      border-width: 0;
     }
   }
