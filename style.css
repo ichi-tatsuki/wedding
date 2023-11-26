@@ -119,6 +119,54 @@
     box-sizing: border-box;
     /* ボーダーとパディングを含めて横幅計算 */
   }
+  #btn-a {
+    background-color: #A8C0D7;
+  }
+  
+  #btn-b {
+    background-color: #F5B7B7;
+  }
+  
+  #btn-c {
+    background-color: #FDE3A1;
+  }
+  
+  #btn-d {
+    background-color: #C2D8C0;
+  }
+  #btn-a:hover {
+    background-color: #8097B1;
+  }
+  
+  #btn-b:hover {
+    background-color: #D48E8E;
+  }
+  
+  #btn-c:hover {
+    background-color: #FAD573;
+  }
+  
+  #btn-d:hover {
+    background-color: #A4BAAB;
+  }
+  
+  #btn-a:active {
+    background-color: #2E3E4E;
+  }
+  
+  #btn-b:active {
+    background-color: #944848;
+  }
+  
+  #btn-c:active {
+    background-color: #D08E33;
+  }
+  
+  #btn-d:active {
+    background-color: #6D8F6D;
+  }
+  
+  
 
 
   .profile-container {
@@ -149,8 +197,8 @@
 
   .stop-circle {
     position: absolute;
-    width: 2vw; /* 直径 */
-    height: 2vw; /* 直径 */
+    width: 3vw; /* 直径 */
+    height: 3vw; /* 直径 */
     top: -20%;
     left: -20%;
     transform: translate(-50%, -50%);
