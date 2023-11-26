@@ -147,6 +147,18 @@
     position: relative;
   }
 
+  .stop-circle {
+    position: absolute;
+    width: 2vw; /* 直径 */
+    height: 2vw; /* 直径 */
+    top: -20%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #777;
+    box-sizing: border-box;
+  }
+
   .circle {
     position: absolute;
     width: 2vw; /* 直径 */
