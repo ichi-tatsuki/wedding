@@ -181,6 +181,13 @@
     margin: 5px;
   }
 
+  .profile-column img {
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center top; /* 下部を中央に配置 */
+    aspect-ratio: 1 / 1;
+  }
+
   .profile-column-q {
     flex: 1;
     padding: 0px;
