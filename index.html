@@ -7,16 +7,28 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Great+Vibes&family=Shippori+Mincho&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
     <title>T&S Wedding App</title>
 </head>
 
 <body id="body">
 
     <header>
+        <div style="position: absolute; margin-top:5vw;">
         <h1>
-            <span id="roma"></span>-Sama<br>Welcome to <br> Tatsuki & Sakiko's<br>Wedding Party
+            Dear <span id="roma"></span>
         </h1>
+        <h1 style="font-family: 'Cormorant', serif; line-height: 0.8; "><span style="font-size: 0.7em">Welcome
+                to <br>Tatsuki & Sakiko's<br>Wedding Party</span>
+        </h1>
+    </div>
     </header>
     <div class="subpage">
         <h2>Seating<br><span>席次</span></h2>
@@ -24,7 +36,7 @@
             <img style="width: 100%;" src="res/seating.png">
             <div id="cc-pos" class="circle"></div>
         </div>
-    
+
     </div>
     <div class="top-page">
         <div class="imgfilter"></div>
@@ -178,10 +190,14 @@
     <div class="subpage">
         <h2>Answer<br><span>アンサー</span></h2>
         <div class="quiz-container">
-            <button id="btn-a" class="option-button" data-value="option1" onclick="writeToSpreadsheet('select1')">A</button>
-            <button id="btn-b" class="option-button" data-value="option2" onclick="writeToSpreadsheet('select2')">B</button>
-            <button id="btn-c" class="option-button" data-value="option3" onclick="writeToSpreadsheet('select3')">C</button>
-            <button id="btn-d" class="option-button" data-value="option4" onclick="writeToSpreadsheet('select4')">D</button>
+            <button id="btn-a" class="option-button" data-value="option1"
+                onclick="writeToSpreadsheet('select1')">A</button>
+            <button id="btn-b" class="option-button" data-value="option2"
+                onclick="writeToSpreadsheet('select2')">B</button>
+            <button id="btn-c" class="option-button" data-value="option3"
+                onclick="writeToSpreadsheet('select3')">C</button>
+            <button id="btn-d" class="option-button" data-value="option4"
+                onclick="writeToSpreadsheet('select4')">D</button>
         </div>
     </div>
     <script src="script.js"></script>

@@ -18,6 +18,13 @@
     font-size: 4vw;
   }
 
+  iframe {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+  }
+
   .top-page {
     position: relative;
     background-image: url('res/select45.JPG');
@@ -44,12 +51,14 @@
     color: #ffffff;
   }
   h1 {
-    position: absolute;
     color: #000000;
     font-family: 'Great Vibes', cursive;
     /* おしゃれなフォントを指定 */
-    font-size: 3em;
+    font-size: 3.3em;
     /* フォントサイズを調整 */
+    margin-bottom: 0;
+    margin-top: 0; 
+    margin-left: 5vw;
   }
 
   h2 {
