@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芳名録</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* スクロールバーを隠す */
+        }
+
+        iframe {
+            display: block;
+            width: 100vw; /* ビューポートの幅に合わせる */
+            height: 100vh; /* ビューポートの高さに合わせる */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    // GETパラメータからidの値を取得
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
+    // iframeのsrcを設定
+    const iframeSrc = id ? `https://script.google.com/macros/s/AKfycbxI1-fKTMX08uYdnfBKAyB6c5wMVagXeSheQeN3n8hpFc5h2qxjuJtAw-beY5uBbzY3Kg/exec?id=${id}` : 'https://script.google.com/macros/s/AKfycbxI1-fKTMX08uYdnfBKAyB6c5wMVagXeSheQeN3n8hpFc5h2qxjuJtAw-beY5uBbzY3Kg/exec';
+
+    // iframeを生成してbodyに追加
+    const iframe = document.createElement('iframe');
+    iframe.src = iframeSrc;
+    document.body.appendChild(iframe);
+</script>
+
+</body>
+</html>
