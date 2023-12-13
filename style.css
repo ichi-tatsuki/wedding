@@ -62,12 +62,51 @@ header::before {
     width: 100%;
     color: #ffffff;
   }
+
+  .subpage {
+    position: relative;
+  }
+  @keyframes sparkle {
+    0% { opacity: 0.8; }
+    50% { opacity: 0.3; }
+    100% { opacity: 0.8; }
+  }
+
+  .jackie {
+    position: absolute;
+    border: none; 
+    width: 10vw;
+    height: 10vw;
+    opacity: 0.5;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  #jackie1{
+    left: 40vw;
+    top: 30vw;
+    animation: sparkle 2s infinite;
+    transform: rotate(30deg);
+  }
+  #jackie2{
+    left: 80vw;
+    top: 70vw;
+    transform: rotate(150deg);
+  }
+  #jackie3{
+    left: 10vw;
+    top: 30vw;
+    transform: rotate(-30deg);
+  }
+  #jackie4{
+    left: 20vw;
+    top: 200vw;
+    transform: rotate(30deg);
+  }
+
   h1 {
     color: #000000;
     font-family: 'Great Vibes', cursive;
-    /* おしゃれなフォントを指定 */
-    font-size: 4.5em;
-    /* フォントサイズを調整 */
+    font-size: 7.5vw;
     margin-bottom: 0;
     margin-top: 0; 
     margin-left: 5vw;
@@ -76,10 +115,10 @@ header::before {
   h2 {
     font-family: 'Great Vibes', cursive;
     text-align: center;
-    font-size: 6em;
+    font-size: 10vw;
     color: #c4972f;
     line-height: 0.7;
-    margin-top: 1em;
+    margin-top: 6vw;
     margin-bottom: 0;
   }
 
@@ -98,7 +137,7 @@ header::before {
   }
   
   li {
-    margin: 1em;
+    margin-bottom: 5vw;
     line-height: 1;
   }
 
@@ -111,7 +150,7 @@ header::before {
     background-color: #f0f0f0;
     /* ボタンの背景色を設定 */
     border: none;
-    border-radius: 5px;
+    border-radius: 1vw;
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-sizing: border-box;
@@ -133,8 +172,8 @@ header::before {
   }
 
   .option-button {
-    font-size: 3em;
-    padding: 2em;
+    font-size: 4.5vw;
+    height: 20vw;
     width: 49%;
     /* 横幅を50%に設定 */
     box-sizing: border-box;
