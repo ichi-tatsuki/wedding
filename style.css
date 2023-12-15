@@ -8,7 +8,7 @@
 
   header {
     /* background-image: url('select8.jpg'); */
-    background-image: url('res/header.jpg');
+    background-image: url('res/header2.jpg');
     background-size: cover;
     aspect-ratio: 3 / 1;
   }
@@ -39,7 +39,8 @@ header::before {
 
   .top-page {
     position: relative;
-    background-image: url('res/select45.JPG');
+    background-image: url('res/PA142435.JPG');
+    background-position: center; 
     background-size: cover;
     aspect-ratio: 3 / 5;
   }
@@ -102,6 +103,13 @@ header::before {
     top: 200vw;
     transform: rotate(30deg);
   }
+  #jackie5{
+    left: 54.5vw;
+    top: 0;
+    width: 3vw;
+    height: 3vw;
+    transform: rotate(30deg);
+  }
 
   h1 {
     color: #000000;
@@ -118,7 +126,7 @@ header::before {
     font-size: 10vw;
     color: #c4972f;
     line-height: 0.7;
-    margin-top: 6vw;
+    margin-top: 6.5vw;
     margin-bottom: 0;
   }
 
@@ -175,6 +183,7 @@ header::before {
     font-size: 4.5vw;
     height: 20vw;
     width: 49%;
+    color: black;
     /* 横幅を50%に設定 */
     box-sizing: border-box;
     /* ボーダーとパディングを含めて横幅計算 */
@@ -235,10 +244,13 @@ header::before {
   }
 
   .profile-column {
-    font-size: 3vw;
     flex: 1;
     padding: 0px;
     margin: 5px;
+  }
+
+  .profile-column p {
+    font-size: 3.5vw;
   }
 
   .profile-column img {
