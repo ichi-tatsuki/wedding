@@ -14,9 +14,9 @@
     <title>T&S Wedding App</title>
 </head>
 
-<body id="body">
+<body id="body" onload="writeToSpreadsheet('login')">
 
-    <header>
+    <header id="header">
         <div style="position: absolute; margin-top:5vw;">
             <h1>
                 Dear <span id="roma"></span>
@@ -101,11 +101,11 @@
         <h2>Profile<br><span>プロフィール</span></h2>
         <div class="profile-container">
             <div class="profile-column">
-                <img src="res/sakiko.jpg" width=100%>
+                <img id="sakiko-image" src="res/sakiko.jpg" width=100%>
                 <p>さきこ</p>
             </div>
             <div class="profile-column">
-                <img src="res/tatsuki.jpg" width=100%>
+                <img id="tatsuki-image" src="res/tatsuki.jpg" width=100%>
                 <p>たつき</p>
             </div>
         </div>
@@ -183,7 +183,7 @@
                 <p>相手へお願い<br>したいこと</p>
             </div>
             <div class="profile-column">
-                <p>トイレの蓋と扉を閉めてほしい</p>
+                <p>トイレの蓋と扉を<br>閉めてほしい</p>
             </div>
         </div>
     </div>
